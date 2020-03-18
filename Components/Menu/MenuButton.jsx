@@ -23,7 +23,7 @@ const MenuButton = ({ label, path }) => {
             text-align: center;
             list-style-type: none;
             height: 150px;
-            background-image: url(images/Button.svg);
+            background-image: url(/images/Button.svg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -34,7 +34,7 @@ const MenuButton = ({ label, path }) => {
           }
 
           .acent {
-            background-image: url(images/Button_acent.svg);
+            background-image: url(/images/Button_acent.svg);
           }
 
           .nav_button a {

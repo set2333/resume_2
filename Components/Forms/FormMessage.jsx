@@ -1,12 +1,32 @@
 import { useState } from 'react';
 import ButtonOk from '../OtherComponents/ButtonOk';
+import useModal from '../OtherComponents/useModal';
+import Message from '../OtherComponents/Message';
+import sendAjax from '../../Function/sendAjax';
 
 const FormMessage = () => {
   const [textMessage, setTextMassage] = useState('');
   const [autorName, setAutorName] = useState('');
   const [autorMail, setAutorMail] = useState('');
+  const [Modal, open] = useModal(Message);
+  const sendMessage = (message, autor, adress) => {
+    const query = sendAjax('/sendMessage', { message, autor, adress });
+    query.subscribe((response) => {
+      if (response.status === 200) open({ head: 'Отправленно', text: 'Ваше сообщение успешно отправленно', ulData: [] });
+      else {
+        open({
+          head: 'Ошибка',
+          text:
+            'Произошла ошибка. Пожалуйста отправте Ваше сообщение на почту. Спасибо за понимание.',
+          ulData: [],
+        });
+      }
+    });
+  };
+
   return (
     <>
+      <Modal />
       <form className="formMessage">
         <h2>Сообщение</h2>
         <textarea
@@ -34,11 +54,7 @@ const FormMessage = () => {
             onChange={({ target: { value } }) => setAutorMail(value)}
           />
         </h3>
-        <ButtonOk
-          onClick={() => {
-            alert('click');
-          }}
-        />
+        <ButtonOk onClick={() => sendMessage(textMessage, autorName, autorMail)} />
       </form>
       <style jsx>
         {`

@@ -15,6 +15,10 @@ const ButtonOk = ({ onClick }) => (
           margin: 10px auto;
         }
 
+        .buttonOk:active {
+          box-shadow: inset 3px 3px 5px black;
+        }
+
         h2 {
           font-family: 'Bad Script', cursive;
           font-size: 16px;

@@ -1,4 +1,3 @@
-import React from 'react';
 import FormMessage from '../Forms/FormMessage';
 import ListItem from '../OtherComponents/ListItem';
 

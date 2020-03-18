@@ -7,7 +7,7 @@ const ListItem = ({ children }) => (
       {`
         li {
           list-style: none;
-          background: url(images/marker.svg) no-repeat left / contain;
+          background: url(/images/marker.svg) no-repeat left / contain;
           text-align: left;
           padding-left: 20px;
         }

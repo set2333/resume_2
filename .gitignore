@@ -1,1 +1,6 @@
 /node_modules/
+init.js
+/logs/admin/*.txt
+/logs/all/*.txt
+/logs/error/*.txt
+/logs/user/*.txt

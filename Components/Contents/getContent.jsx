@@ -11,7 +11,7 @@ const getContent = (WrappedComponent) => () => (
           padding: 20px;
           min-height: 95vh;
           border-top: none;
-          background: url(images/note.svg) repeat-x top left / 36px auto, url(images/cel.svg);
+          background: url(/images/note.svg) repeat-x top left / 36px auto, url(/images/cel.svg);
         }
       `}
     </style>

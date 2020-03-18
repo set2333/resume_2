@@ -8,7 +8,7 @@ const Photo = ({
     <style jsx>
       {`
         .photo {
-          background: url(${image}) no-repeat center center / cover;
+          background: url(/${image}) no-repeat center center / cover;
           margin: 10px;
           width: ${width}px;
           height: ${height}px;

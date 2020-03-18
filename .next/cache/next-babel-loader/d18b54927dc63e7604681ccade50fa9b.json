@@ -1,0 +1,1 @@
+{"ast":null,"code":"import React from \"react\";\nvar __jsx = React.createElement;\nimport AppAdmin from '../../Components/AppAdmin';\nimport ContentAdmin from '../../Components/Contents/ContentAdmin';\nexport default function Index() {\n  return __jsx(AppAdmin, {\n    content: ContentAdmin\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

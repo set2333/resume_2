@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import Menu from './Menu/Menu';
 import getContent from './Contents/getContent';
 
@@ -194,6 +195,14 @@ const App = ({ content }) => {
       </style>
     </>
   );
+};
+
+App.propTypes = {
+  content: PropTypes.element,
+};
+
+App.defaultProps = {
+  content: null,
 };
 
 export default App;
