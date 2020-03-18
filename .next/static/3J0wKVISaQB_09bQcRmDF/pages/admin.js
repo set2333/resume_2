@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{Egov:function(n,t,o){(window.__NEXT_P=window.__NEXT_P||[]).push(["/admin",function(){return o("hp3m")}])},hp3m:function(n,t,o){"use strict";o.r(t),o.d(t,"default",(function(){return r}));var u=o("q1tI"),i=o.n(u),e=(o("MEkN"),i.a.createElement);function r(){return e("h1",null,"Adminka")}}},[["Egov",0,2,1,3]]]);
