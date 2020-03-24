@@ -31,8 +31,9 @@ const ContentMessages = () => {
     const query = sendAjax('/getmessages', { numberPage: numPage - 1 });
     query.subscribe(
       (response) => {
+        console.log('STATUS: ', response.response);
         if (response.status === 200) {
-          const data = JSON.parse(response.response);
+          const data = response.response;
           const count = data.count / data.countMessagesOnePage;
           dispatch({
             type: 'GET_MESSAGE_FROM_SERVER',

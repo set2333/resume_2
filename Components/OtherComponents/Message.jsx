@@ -39,6 +39,20 @@ const Message = ({ head, text, ulData }) => (
           top: 200px;
           margin: auto;
         }
+
+        @media (min-width: 421px) and (max-width: 768px) {
+          .message {
+            padding: 20px;
+            width: 240px;
+            height: 240px;
+            top: 120px;
+            position: fixed;
+          }
+
+          .messageBG {
+            left: 100px;
+          }
+        }
       `}
     </style>
   </>

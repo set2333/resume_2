@@ -17,6 +17,28 @@ const Menu = () => (
           position: fixed;
           display: block;
         }
+
+        @media (min-width: 769px) and (max-width: 956px) {
+          nav {
+            width: 192px;
+          }
+        }
+
+        @media (min-width: 421px) and (max-width: 768px) {
+          nav {
+            width: 420px;
+            height: 80px;
+            position: relative;
+          }
+        }
+
+        @media (max-width: 420px) {
+          nav {
+            width: 420px;
+            height: 80px;
+            position: relative;
+          }
+        }
       `}
     </style>
   </>

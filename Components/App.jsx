@@ -191,6 +191,59 @@ const App = ({ content }) => {
             width: 960px;
             margin: 0 auto;
           }
+
+          @media (min-width: 769px) and (max-width: 956px) {
+            #main {
+              width: 768px;
+              background: red;
+            }
+          }
+
+          @media (min-width: 421px) and (max-width: 768px) {
+            html {
+              font-size: 10px;
+            }
+
+            #main {
+              width: 420px;
+            }
+
+            p {
+              font-size: 12px;
+            }
+
+            h1 {
+              margin-top: 50px;
+              font-size: 20px;
+            }
+
+            h2 {
+              font-size: 16px;
+            }
+          }
+
+          @media (max-width: 420px) {
+            html {
+              font-size: 10px;
+            }
+
+            #main {
+              width: 420px;
+            }
+
+            p {
+              font-size: 12px;
+            }
+
+            h1 {
+              margin-top: 50px;
+              font-size: 16px;
+            }
+
+            h2 {
+              font-size: 12px;
+            }
+          }
         `}
       </style>
     </>

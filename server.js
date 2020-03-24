@@ -6,12 +6,14 @@ const next = require('next');
 const Router = require('./ServerModules/Routers/Router');
 
 const port = parseInt(process.env.PORT, 10) || 3000;
-const dev = process.env.NODE_ENV !== 'production';
+// const dev = process.env.NODE_ENV !== 'production';
+const dev = false;
+
 const app = next({ dev });
 
-app.prepare().then(() => {
-  const server = express();
+const server = express();
 
+app.prepare().then(() => {
   server.use(
     session({
       secret: 'ResumeSecretKey',
@@ -34,3 +36,4 @@ app.prepare().then(() => {
     },
   );
 });
+module.exports.server = server;

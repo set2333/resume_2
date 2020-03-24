@@ -42,6 +42,36 @@ const MenuButton = ({ label, path }) => {
             color: black;
             text-decoration: none;
           }
+
+          @media (min-width: 421px) and (max-width: 768px) {
+            .nav_button {
+              height: 80px;
+              font-size: 10px;
+            }
+
+            .nav_button:hover {
+              font-size: 12px;
+            }
+
+            .nav_button {
+              display: inline-block;
+            }
+          }
+
+          @media (max-width: 420px) {
+            .nav_button {
+              height: 80px;
+              font-size: 8px;
+            }
+
+            .nav_button:hover {
+              font-size: 10px;
+            }
+
+            .nav_button {
+              display: inline-block;
+            }
+          }
         `}
       </style>
     </>

@@ -13,6 +13,28 @@ const getContent = (WrappedComponent) => () => (
           border-top: none;
           background: url(/images/note.svg) repeat-x top left / 36px auto, url(/images/cel.svg);
         }
+
+        @media (min-width: 769px) and (max-width: 956px) {
+          .content {
+            width: 576px;
+          }
+        }
+
+        @media (min-width: 421px) and (max-width: 768px) {
+          .content {
+            width: 420px;
+            float: none;
+            margin-top: 0;
+          }
+        }
+
+        @media (max-width: 420px) {
+          .content {
+            width: 420px;
+            float: none;
+            margin-top: 0;
+          }
+        }
       `}
     </style>
   </div>
